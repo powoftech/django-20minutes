@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}Django App{% endblock title %}</title>
+    </head>
+    <body>
+        {% comment %} <ul id="navigation">
+            {% for item in navigation %}
+            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+            {% endfor %}
+        </ul> {% endcomment %}
+
+        <h1>Django App</h1>
+        <p>{% block content %}{% endblock content %}</p>
+        {{ a_variable }} {# a comment #}
+    </body>
+</html>
